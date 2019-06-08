@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/route.js"></script>
+    <style>
+    .a{
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .contain{
+       display: flex
+    }
+    .far{
+        margin-left: 800px;
+       
+    }
+    a{
+        text-decoration: none;
+        color: white !important;
+    }
+    body{
+        background-image: url("images/bestS.jpg");
+       
+        
+    }
+
+    </style>
+
+
+</head>
+<body>
+    <body ng-app="app">
+    <div class="container">
+        <div class="contain">       
+         <div>
+            <strong>
+        <a class="a" ng-href="#/portfolio">PORTFOLIO</a>
+    </strong>
+    </div>
+    <div class="far">
+        <a  class="b" ng-href="#/Resume"><strong> Resume</a></strong>&nbsp;
+        <a  class="c" ng-href="#/About"><strong>About</a></strong>&nbsp;
+        <a  class="d" ng-href="#/Projects"><strong>Projects</a></strong>&nbsp;
+        <a  class="e" ng-href="#/Contact"><strong>Contact</a></strong>
+    </div>
+   
+</div><br>
+<ng-view></ng-view>
+    </div>
+   
+
+    </body>
+</body>
+</html>
