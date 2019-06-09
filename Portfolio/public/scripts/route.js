@@ -16,4 +16,8 @@ app.config(function($routeProvider, $locationProvider){
     .when('/Contact',{
         templateUrl:'views/contact.html'
     })
+    
+    .when('/',{
+        templateUrl:'views/portfolio.html'
+    })
 })
